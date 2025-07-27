@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norberto PC Solutions - Técnico de PC y Soporte Informático</title>
+    
+    <!-- Chosen Palette: Deep Slate (slate-950, slate-900, slate-800), Sky Blue (sky-400), and Light Gray (slate-200, slate-300) -->
+    <!-- Application Structure Plan: A single-page, scrolling application with a fixed navigation bar. The structure guides the user logically from an introduction (Hero), through detailed offerings (Services), trust-building points (Why Choose Us), and finally to a clear call to action (Contact). This flow is intuitive for a service-based business, making information easily accessible and encouraging user contact. Subtle animations on scroll are added for a professional feel. -->
+    <!-- Visualization & Content Choices: The source report is text-based, so traditional data charts are not applicable. Instead, information is 'visualized' through structure and design. Report Info: Services List -> Goal: Organize/Inform -> Presentation: Interactive Cards (HTML/Tailwind Grid) -> Interaction: Hover effects and scroll-triggered animations for engagement -> Justification: Breaks down a long list into digestible, visually appealing components. Report Info: Value Proposition -> Goal: Build Trust -> Presentation: Icon-based feature list (HTML/Tailwind Flexbox) -> Justification: Quickly communicates key benefits in a scannable format. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body class="text-slate-300"> <!-- Texto general más claro para fondos oscuros -->
+
+    <header class="bg-slate-900/90 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#inicio" class="text-xl md:text-2xl font-bold text-white">
+                Norberto<span class="text-sky-400">PC</span> Solutions
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#servicios" class="nav-link text-white font-medium border-b-2 border-transparent pb-1">Servicios</a>
+                <a href="#porque-elegirme" class="nav-link text-white font-medium border-b-2 border-transparent pb-1">¿Por qué elegirme?</a>
+                <a href="#contacto" class="nav-link text-white font-medium border-b-2 border-transparent pb-1">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#servicios" class="block text-white text-center py-2 px-4 text-sm hover:bg-slate-800">Servicios</a>
+            <a href="#porque-elegirme" class="block text-white text-center py-2 px-4 text-sm hover:bg-slate-800">¿Por qué elegirme?</a>
+            <a href="#contacto" class="block text-white text-center py-2 px-4 text-sm hover:bg-slate-800">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-bg text-white">
+             <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">Soluciones Informáticas Confiables a tu Alcance</h1>
+                <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8">Soy Norberto Vélez, tu técnico de confianza. Ofrezco reparación, mantenimiento y optimización de PCs con un servicio profesional, honesto y personalizado.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#servicios" class="cta-button bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg">Ver Servicios</a>
+                    <a href="#contacto" class="cta-button bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-full text-lg">Contactar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="py-20 bg-slate-900"> <!-- Fondo oscuro para la sección de servicios -->
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Nuestros Servicios</h2> <!-- Título blanco -->
+                    <p class="text-lg text-slate-300 mt-2 max-w-2xl mx-auto">Ofrezco una solución integral para todas tus necesidades informáticas. Desde reparaciones complejas hasta optimización para el máximo rendimiento.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="service-card bg-slate-800 rounded-xl p-8 shadow-lg border border-slate-700 animate-on-scroll"> <!-- Tarjeta más oscura -->
+                        <div class="text-3xl text-sky-400 mb-4">🔧</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Diagnóstico y Reparación</h3>
+                        <p class="text-slate-300">Identificamos y solucionamos fallas de hardware y software, desde problemas de encendido hasta errores de sistema.</p>
+                    </div>
+
+                    <div class="service-card bg-slate-800 rounded-xl p-8 shadow-lg border border-slate-700 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="text-3xl text-sky-400 mb-4">🚀</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Mantenimiento Preventivo</h3>
+                        <p class="text-slate-300">Limpieza interna, optimización del sistema y actualizaciones para prolongar la vida útil y mejorar el rendimiento.</p>
+                    </div>
+
+                    <div class="service-card bg-slate-800 rounded-xl p-8 shadow-lg border border-slate-700 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="text-3xl text-sky-400 mb-4">🛡️</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Eliminación de Virus y Seguridad</h3>
+                        <p class="text-slate-300">Eliminamos amenazas, instalamos antivirus y configuramos tu equipo para proteger tu información personal y profesional.</p>
+                    </div>
+
+                    <div class="service-card bg-slate-800 rounded-xl p-8 shadow-lg border border-slate-700 animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="text-3xl text-sky-400 mb-4">⚙️</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Instalación y Configuración</h3>
+                        <p class="text-slate-300">Instalación de sistemas operativos (Windows, Linux), programas esenciales y periféricos (impresoras, redes, etc.).</p>
+                    </div>
+
+                    <div class="service-card bg-slate-800 rounded-xl p-8 shadow-lg border border-slate-700 animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="text-3xl text-sky-400 mb-4">⚡</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Actualización de Componentes</h3>
+                        <p class="text-slate-300">¿Necesitas más velocidad? Asesoramiento e instalación de RAM, discos SSD, tarjetas gráficas y otros componentes.</p>
+                    </div>
+
+                    <div class="service-card bg-slate-800 rounded-xl p-8 shadow-lg border border-slate-700 animate-on-scroll" style="transition-delay: 0.5s;">
+                        <div class="text-3xl text-sky-400 mb-4">🖥️</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Armado de PCs a Medida</h3>
+                        <p class="text-slate-300">Diseñamos y ensamblamos la PC ideal para tus necesidades específicas: gaming, diseño gráfico, trabajo, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="porque-elegirme" class="py-20 bg-slate-950"> <!-- Fondo muy oscuro para esta sección -->
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Tu Mejor Opción en Soporte Informático</h2>
+                    <p class="text-lg text-slate-300 mt-2 max-w-2xl mx-auto">Mi compromiso es brindarte un servicio de calidad, transparente y adaptado a ti.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+                    <div class="p-6 animate-on-scroll">
+                        <div class="text-4xl text-sky-400 mb-4">💬</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Consultas SIN COSTO</h3>
+                        <p class="text-slate-300">Aclara todas tus dudas antes de cualquier servicio. ¡Tu consulta no tiene costo!</p>
+                    </div>
+                    <div class="p-6 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="text-4xl text-sky-400 mb-4">📋</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Presupuestos Transparentes</h3>
+                        <p class="text-slate-300">Recibe un presupuesto detallado y sin sorpresas, garantizando total claridad.</p>
+                    </div>
+                    <div class="p-6 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="text-4xl text-sky-400 mb-4">🤝</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Atención Personalizada</h3>
+                        <p class="text-slate-300">Soluciones a medida, adaptadas a tus necesidades y un trato cercano y amable.</p>
+                    </div>
+                     <div class="p-6 animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="text-4xl text-sky-400 mb-4">🏆</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Experiencia Comprobada</h3>
+                        <p class="text-slate-300">Años de trayectoria y clientes satisfechos respaldan la calidad de nuestro trabajo.</p>
+                    </div>
+                     <div class="p-6 animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="text-4xl text-sky-400 mb-4">⏱️</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Rapidez y Eficacia</h3>
+                        <p class="text-slate-300">Nos esforzamos por solucionar tus problemas rápidamente para que vuelvas a la acción.</p>
+                    </div>
+                     <div class="p-6 animate-on-scroll" style="transition-delay: 0.5s;">
+                        <div class="text-4xl text-sky-400 mb-4">🗓️</div>
+                        <h3 class="text-xl font-bold text-white mb-2">Flexibilidad y Comodidad</h3>
+                        <p class="text-slate-300">Nos adaptamos a tus horarios para brindarte un servicio conveniente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20 bg-slate-900 text-white"> <!-- Fondo oscuro para la sección de contacto -->
+            <div class="container mx-auto px-6 text-center animate-on-scroll">
+                 <h2 class="text-3xl md:text-4xl font-bold">¡Contacta Hoy Mismo!</h2>
+                 <p class="text-lg text-slate-300 mt-4 mb-8 max-w-2xl mx-auto">No dejes que los problemas tecnológicos te detengan. Solicita tu diagnóstico o presupuesto sin compromiso.</p>
+                 <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="bg-slate-800 p-6 rounded-lg text-lg"> <!-- Fondo de tarjeta más oscuro -->
+                        <span class="font-bold">📱 Teléfono:</span> <a href="tel:1123260262" class="text-sky-400 hover:text-sky-300">11 2326-0262</a>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg text-lg"> <!-- Fondo de tarjeta más oscuro -->
+                        <span class="font-bold">✉️ Email:</span> <a href="mailto:nnvelez95@gmail.com" class="text-sky-400 hover:text-sky-300">nnvelez95@gmail.com</a>
+                    </div>
+                 </div>
+                 <div class="mt-8 text-slate-400">
+                        <p class="text-lg">También puedes contactarme a través de WhatsApp:</p>
+                        <a href="https://wa.me/5491123260262" class="text-sky-400 hover:text-sky-300 font-bold">Enviar mensaje por WhatsApp</a>
+                        <p class="mt-4">Atiendo en persona o a domicilio, según tu preferencia.</p>
+                    
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-6"> <!-- Footer muy oscuro -->
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Norberto PC Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="my_scripts.js"></script>
+</body>
+</html>
