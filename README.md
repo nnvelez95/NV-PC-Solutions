@@ -22,7 +22,7 @@ El corazón de este proyecto reside en los pilares del desarrollo web *frontend*
 
 Puedes acceder a la versión desplegada de la página y navegar por mi portafolio directamente a través de este enlace:
 
-[**🌐 Visita NV-PC-Solutions aquí**]([(https://nv-pc-solutions-6b3y0vvlu-norberto-velezs-projects.vercel.app/)])
+[**🌐 Visita NV-PC-Solutions aquí**](https://nv-pc-solutions.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAadiCXHboYH_K7-OvFtH-5uffO87VghXQDnQ5TnEwRhJLvjIjgrFkgT6G5Duag_aem_62qKnIqA-dOvIdUAxoH0lw)
 
 ## 📂 Estructura del Repositorio
 
